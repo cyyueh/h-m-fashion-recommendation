@@ -28,6 +28,7 @@ H&M customers often face overwhelming product choices. This project uses 30M+ tr
 - Downsampled to 6-week transaction window to reflect fast fashion cycle
 - Built & compared 6 models:
   - Content-Based Filtering (TF-IDF + Cosine Similarity & KNN)
+    ![TF-IDF Heatmap for First 20 Products and Features](images/tfidf_heatmap.png)
   - User-Based Collaborative Filtering (Gower Distance)
   - RFM + KMeans Clustering + Association Rule Mining
   - Alternating Least Squares (ALS) Matrix Factorization
@@ -40,6 +41,8 @@ H&M customers often face overwhelming product choices. This project uses 30M+ tr
 - ALS models drive personalized recommendations that boost customer engagements
 - Quality of features matters more than quantity: additional features may introduce noise rather than value
 - Multiple recommendation approaches enable versatile business solutions: addressing cold-start problems, personalizing existing user experiences, and efficiently promoting new products
+- ALS outperformed all other models, with a MAP@12 of 0.0078, followed by item-based and RFM-based approaches
+  ![Model Comparison - MAP@12 Scores](images/models_comparison.png)
 
 ---
 
@@ -56,6 +59,6 @@ H&M customers often face overwhelming product choices. This project uses 30M+ tr
 
 - `notebooks/`: Contains my part of notebook with EDA, Content-Based Filtering modeling, and evaluation
 - `data/`: (Not uploaded) Dataset available on Kaggle at [this link](https://www.kaggle.com/competitions/h-and-m-personalized-fashion-recommendations/data)
-- `images/`: Visualizations like MAP@12 chart or similarity heatmaps used in this README
+- `images/`: Visualizations like MAP@12 chart and similarity heatmaps used in this README
 - `Project_Report.pdf`: Final group report including background, methods, results, and conclusions
 
