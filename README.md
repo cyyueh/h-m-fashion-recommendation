@@ -16,10 +16,9 @@ H&M customers often face overwhelming product choices. This project uses 30M+ tr
 ---
 
 ## Tools & Technologies
-- Python (NumPy, pandas, scikit-learn, lightFM)
+- Python (NumPy, pandas, scikit-learn)
 - Recommendation algorithms (Content-Based, ALS, KNN, Clustering)
 - Evaluation metric: MAP@12
-- Kaggle competition dataset
 - Kaggle Notebook
 
 ---
